@@ -8,7 +8,7 @@ module RedmineLatexMathjax
   displayIndent: '2em',
   tex2jax: {
 	inlineMath: [ ['$','$'], ['\\\\(','\\\\)'] ],
-	displayMath: [ ['$$','$$'], ["\\\\[","\\\\]"] ],
+	displayMath: [ ['$$','$$'], ['\\\\[','\\\\]'] ],
 	processEscapes: true
   }
 });
