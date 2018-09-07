@@ -2,8 +2,8 @@ module RedmineLatexMathjax
   module Hooks
     class ViewLayoutsBaseHtmlHeadHook < Redmine::Hook::ViewListener
       def view_layouts_base_html_head(context={})
-          return "<script type=\"text/x-mathjax-config\">
-  MathJax.Hub.Config({
+          return "<script type='text/javascript' async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=default'>
+MathJax.Hub.Config({
   displayAlign: 'left',
   displayIndent: '2em',
   tex2jax: {
@@ -12,8 +12,7 @@ module RedmineLatexMathjax
 	processEscapes: true
   }
 });
-</script>\n" +
-javascript_include_tag("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=default") + "
+</script>" + "
 <script type=\"text/javascript\">
   // Own submitPreview script with Mathjax trigger. Copy & Paste of public/javascripts/application.js
   function MJsubmitPreview(url, form, target) {
