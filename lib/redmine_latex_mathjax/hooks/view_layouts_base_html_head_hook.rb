@@ -7,8 +7,8 @@ MathJax.Hub.Config({
   displayAlign: 'left',
   displayIndent: '2em',
   tex2jax: {
-	inlineMath: [ ['$','$'], ['\\\\(','\\\\)'] ],
-	displayMath: [ ['$$','$$'], ['\\\\[','\\\\]'] ],
+	inlineMath: [ ['$','$'], ['\\\\\\\\(','\\\\\\\\)'] ],
+	displayMath: [ ['$$','$$'], ['\\\\\\\\[','\\\\\\\\]'] ],
 	processEscapes: true
   }
 });
