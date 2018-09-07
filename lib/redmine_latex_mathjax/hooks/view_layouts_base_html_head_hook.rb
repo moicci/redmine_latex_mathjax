@@ -4,8 +4,8 @@ module RedmineLatexMathjax
       def view_layouts_base_html_head(context={})
           return "<script type=\"text/x-mathjax-config\">
   MathJax.Hub.Config({
-  displayAlign: "left",
-  displayIndent: "2em",
+  displayAlign: 'left',
+  displayIndent: '2em',
   tex2jax: {
 	inlineMath: [ ['$','$'], ['\\\\(','\\\\)'] ],
 	displayMath: [ ['$$','$$'], ["\\\\[","\\\\]"] ],
